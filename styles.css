@@ -1,0 +1,279 @@
+@import url("https://rsms.me/inter/inter-ui.css");
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter UI", sans-serif;
+  text-align: center;
+  color: #eaebec;
+}
+
+.titan-background {
+  position: absolute;
+  width: 100%;
+  background-color: #0e1e25;
+  overflow: hidden;
+  z-index: 1;
+  /* Make the rubber band scroll not show empty white space */
+  top: -10%;
+  height: 120%;
+  min-height: 120vh;
+  margin-bottom: -20%;
+}
+
+.stars {
+  position: absolute;
+  top: 0;
+  width: 300vw;
+  height: 100vh;
+  transform: translate(0%, 0%);
+  background-size: contain;
+  background-repeat: repeat;
+  transform-origin: top left;
+}
+
+.stars-L {
+  background-image: url("assets/stars-L.svg");
+  background-size: 890px;
+  height: 750px;
+  animation: panning-stars 200s linear infinite alternate;
+}
+
+.stars-M {
+  background-image: url("assets/stars-M.svg");
+  height: 530px;
+  animation: panning-stars 300s linear infinite alternate;
+}
+
+.stars-S {
+  background-image: url("assets/stars-S.svg");
+  height: 370px;
+  animation: panning-stars 400s linear infinite alternate;
+}
+
+/****
+
+custom css
+
+*****/
+
+.nav {
+  padding: 20px 0 0;
+  margin: 0;
+
+}
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav a {
+  text-decoration: underline;
+}
+
+.nav a:hover {
+  color: #00c7b6;
+}
+
+/****
+form
+****/
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1.4rem;
+}
+
+input {
+  width: 50%;
+  padding: 12px;
+}
+
+textarea {
+  width: 50%;
+  padding: 25px 0;
+}
+
+button {
+  padding: 15px 60px;
+  font-size: 1.4rem;
+  background-color: #112caf;
+  border: 0;
+  color: #eaebec;
+}
+
+.hidden {
+  display: none
+}
+
+/****
+end of form
+****/
+
+/****
+Identity
+****/
+
+.netlify-identity-signup {
+  text-decoration: none;
+  padding: 15px 60px;
+  font-size: 1.4rem;
+  background-color: #00c7b6;
+  border: 0;
+  color: #eaebec;
+}
+
+.netlify-identity-signup:hover {
+  background-color: #ad5277;
+}
+
+.netlify-identity-login {
+  text-decoration: none;
+  padding: 15px 68px;
+  font-size: 1.4rem;
+  background-color: #112caf;
+  border: 0;
+  color: #eaebec;
+}
+
+.netlify-identity-login:hover {
+  background-color: #ad5277;
+}
+
+.netlify-identity-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.netlify-identity-menu li {
+  padding: 30px 0;
+}
+
+.identity-btn {
+  display: none;
+}
+
+.identity-text p {
+  font-size: 1.4rem;
+}
+
+/****
+end of Identity
+****/
+
+/****
+
+custom css
+
+*****/
+
+@keyframes panning-stars {
+  from {
+    transform: translate(-20%, 0%);
+  }
+  to {
+    transform: translate(-80%, -40%);
+  }
+}
+
+.marvellous-container {
+  position: relative;
+  z-index: 2;
+  padding: 104px 0 24px 0;
+  width: 95%;
+  max-width: 600px;
+  margin: auto;
+}
+
+h1 {
+  display: block;
+  font-size: 80px;
+  margin: 0 0 24px 0;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 16vw;
+  }
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 24px;
+}
+
+p .hidden {
+  display: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+.title-marvel {
+  font-weight: bolder;
+  color: #eaebec;
+  letter-spacing: -6.7px;
+  text-transform: uppercase;
+  padding: 0 16px;
+  background: 0e1e25;
+}
+
+.title-studios {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  color: #eaebec;
+  letter-spacing: -4.5px;
+  text-transform: uppercase;
+  padding: 0 16px;
+  border-color: #eaebec;
+  border-top: 8px solid;
+  border-bottom: 8px solid;
+  line-height: 1;
+}
+
+code {
+  display: block;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 18px;
+  width: 100%;
+  padding: 16px 24px;
+  background: rgba(44, 37, 44, 0.8);
+  border: 1px solid #7f797f;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.header {
+  margin-bottom: 104px;
+}
+
+.installation-instructions,
+.usage-instructions {
+  margin-top: 64px;
+}
+
+.footer {
+  margin-top: 224px;
+}
+
+.footer img {
+  height: 104px;
+  width: auto;
+}
